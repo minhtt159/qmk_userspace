@@ -57,14 +57,14 @@ static uint16_t auto_pointer_layer_timer = 0;
 
 // Homerow mods
 // clang-format off
-#define HM_A CTL_T(KC_A)
-#define HM_S ALT_T(KC_S)
-#define HM_D GUI_T(KC_D)
-#define HM_F SFT_T(KC_F)
-#define HM_J SFT_T(KC_J)
-#define HM_K GUI_T(KC_K)
-#define HM_L ALT_T(KC_L)
-#define HM_SCLN CTL_T(KC_SCLN)
+#define HM_A MT(MOD_LCTL, KC_A)
+#define HM_S MT(MOD_LALT, KC_S)
+#define HM_D MT(MOD_LGUI, KC_D)
+#define HM_F MT(MOD_LSFT, KC_F)
+#define HM_J MT(MOD_LSFT, KC_J)
+#define HM_K MT(MOD_LGUI, KC_K)
+#define HM_L MT(MOD_LALT, KC_L)
+#define HM_SCLN MT(MOD_LCTL, KC_SCLN)
 // clang-format on
 
 #ifndef POINTING_DEVICE_ENABLE
