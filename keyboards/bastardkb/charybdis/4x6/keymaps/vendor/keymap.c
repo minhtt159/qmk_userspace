@@ -57,14 +57,14 @@ static uint16_t auto_pointer_layer_timer = 0;
 
 // Homerow mods
 // clang-format off
-#define HM_A C(KC_A)
-#define HM_S A(KC_S)
-#define HM_D G(KC_D)
-#define HM_F S(KC_F)
-#define HM_J S(KC_J)
-#define HM_K G(KC_K)
-#define HM_L A(KC_L)
-#define HM_SCLN C(KC_SCLN)
+#define HM_A CTL_T(KC_A)
+#define HM_S ALT_T(KC_S)
+#define HM_D GUI_T(KC_D)
+#define HM_F SFT_T(KC_F)
+#define HM_J SFT_T(KC_J)
+#define HM_K GUI_T(KC_K)
+#define HM_L ALT_T(KC_L)
+#define HM_SCLN CTL_T(KC_SCLN)
 // clang-format on
 
 #ifndef POINTING_DEVICE_ENABLE
@@ -84,7 +84,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
         KC_TAB,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,       KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, KC_BSLS,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-        LL_ESC, C(KC_A), A(KC_S), G(KC_D), S(KC_F),    RL_G,       RL_H, S(KC_J), G(KC_K), A(KC_L), HM_SCLN, LL_QUOT,
+        LL_ESC,    HM_A,    HM_S,    HM_D,    HM_F,    RL_G,       RL_H,    HM_J,    HM_K,    HM_L, HM_SCLN, LL_QUOT,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_LSFT,    PT_Z,    KC_X,    KC_C,    KC_V,    KC_B,       KC_N,    KC_M, KC_COMM,  KC_DOT, PT_SLSH, KC_RSFT,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
